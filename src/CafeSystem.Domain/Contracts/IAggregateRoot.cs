@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CafeSystem.Domain.Contracts;
 
 /// <summary>
@@ -7,6 +9,17 @@ public interface IAggregateRoot<TId> : IEntity<TId>
 {
     
     int Version { get; }
-    
+
+
+    IReadOnlyCollection<IDomainEvent?> GetDomainEvents();
+
+
+    void AddDomainEvent(IDomainEvent domainEvent);
+
+
+    void RemoveAllDomainEvents();
+
+
+    void RemoveDomainEvent(IDomainEvent domainEvent);
     
 }
