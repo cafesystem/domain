@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <AssemblyName>CafeSystem.Domain</AssemblyName>
+        <RootNamespace>CafeSystem.Domain</RootNamespace>
+        <LangVersion>10</LangVersion>
+        <PackageId>CafeSystem.Domain</PackageId>
+        <Title>Domain-Driven Design Abstractions</Title>
+        <Description>
+            Provides Domain-Driven Design Abstractions like Aggregate, Entity, DomainEvents, ...
+        </Description>
+        <Copyright>(c) 2022 Iman Nemati</Copyright>
+        <PackageProjectUrl>https://github.com/cafesystem/domain</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/cafesystem/domain/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/cafesystem/domain</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>DDD, Domain-Driven Design</PackageTags>
+    </PropertyGroup>
+
+</Project>
