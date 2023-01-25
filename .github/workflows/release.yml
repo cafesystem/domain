@@ -31,7 +31,7 @@ jobs:
       run: dotnet pack ./src/CafeSystem.Domain/CafeSystem.Domain.csproj -c Release
       
     - name: Nuget Publish
-      run: dotnet nuget push ./src/CafeSystem.Domain/bin/Release/*.nupkg -k $NUGET_TOKEN -s https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./src/CafeSystem.Domain/bin/Release/*.nupkg -k $NUGET_TOKEN -s https://api.nuget.org/v3/index.json --skip-duplicate
       env:
         NUGET_TOKEN: ${{ secrets.NUGET_API_KEY }}
       
