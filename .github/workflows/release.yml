@@ -27,10 +27,11 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
-    - name: Publish NuGet
-      uses: brandedoutcast/publish-nuget@v2.5.5
-      with:
-        PROJECT_FILE_PATH: ./src/CafeSystem.Domain/CafeSystem.Domain.csproj
-        PACKAGE_NAME: CafeSystem.Domain
-        NUGET_KEY: ${{ secrets.NUGET_API_KEY }}
-        VERSION_STATIC: 0.0.1
+    - name: Nuget Pack
+      run: dotnet pack ./src/CafeSystem.Domain/CafeSystem.Domain.csproj -c Release
+      
+    - name: Nuget Publish
+      run: dotnet nuget push ./src/CafeSystem.Domain/bin/Release/*.nupkg -k $NUGET_TOKEN -s https://api.nuget.org/v3/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
+      
