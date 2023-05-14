@@ -17,6 +17,7 @@
         <RepositoryUrl>https://github.com/cafesystem/domain</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>DDD, Domain-Driven Design, Aggregate</PackageTags>
+        <Version>1.0.1</Version>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
