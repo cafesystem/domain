@@ -16,7 +16,7 @@
         <PackageLicenseUrl>https://github.com/cafesystem/domain/blob/master/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/cafesystem/domain</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>DDD, Domain-Driven Design</PackageTags>
+        <PackageTags>DDD, Domain-Driven Design, Aggregate</PackageTags>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
